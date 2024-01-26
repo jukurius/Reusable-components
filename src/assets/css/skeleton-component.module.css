@@ -1,0 +1,22 @@
+.skeleton {
+  animation: shimmer 1.5s infinite linear;
+  background: linear-gradient(to right, #ebf5ff 0%, #d1dbec 50%, #daedff 100%);
+  background-size: 200% 100%;
+  border-radius: 5px;
+  opacity: 0.5;
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+.skeleton.purple {
+  background: linear-gradient(to right, #e5c7f1 0%, #deaaeb 50%, #f8abff 100%);
+  animation: shimmer 1.5s infinite linear;
+  background-size: 200% 100%;
+}

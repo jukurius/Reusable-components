@@ -1,0 +1,50 @@
+.link_component {
+  padding: 20px;
+  color: #111;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.link_component.basic {
+  display: inline-block;
+  position: relative;
+}
+
+.link_component.basic:after {
+  bottom: 10px;
+  content: "";
+  display: block;
+  height: 1px;
+  left: 50%;
+  position: absolute;
+  background: #111;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+
+.link_component.basic:hover:after {
+  width: 100%;
+  left: 0;
+}
+
+.link_component.button_styled {
+  border: 1px solid rgb(212, 116, 116);
+  color: #fff;
+  background: rgb(212, 116, 116);
+  border-radius: 4px;
+}
+
+.link_component.button_styled:hover {
+  background: rgb(129, 70, 70);
+  border-color: #fff;
+}
+
+@media (prefers-color-scheme: dark) {
+  .link_component {
+    color: #fff;
+  }
+
+  .link_component.basic:after {
+    background: #fff;
+  }
+}

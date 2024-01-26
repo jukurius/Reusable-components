@@ -1,0 +1,27 @@
+.flex_group {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.input_group {
+  display: flex;
+  margin: 0 auto;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 400px;
+}
+
+.skeleton_img {
+  width: 200px;
+  height: 200px;
+  border-radius: 8px;
+  object-fit: cover;
+  display: block;
+}
+
+h1,
+h2 {
+  text-align: center;
+}

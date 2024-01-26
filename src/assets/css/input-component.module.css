@@ -1,0 +1,20 @@
+.reusable_input_container {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  gap: 4px;
+}
+
+.reusable_input_input {
+  padding: 10px;
+  border: none;
+}
+
+.reusable_input_input.custom_input {
+  border-radius: 20px;
+  padding: 20px;
+}
+
+.reusable_input_label.custom_label {
+  color: blueviolet;
+}
